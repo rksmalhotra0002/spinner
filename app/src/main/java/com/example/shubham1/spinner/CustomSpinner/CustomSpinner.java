@@ -93,6 +93,7 @@ ArrayList<Model>arrayList;
          return 0;
      }
 
+
      @Override
      public View getView(int position, View convertView, ViewGroup parent) {
          Model model=arrayList.get(position);
