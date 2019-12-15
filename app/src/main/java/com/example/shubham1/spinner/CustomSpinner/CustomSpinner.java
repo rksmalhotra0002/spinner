@@ -43,7 +43,18 @@ private void getids()
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-
+            if(position==0)
+            {
+                Toast.makeText(CustomSpinner.this,"india",Toast.LENGTH_LONG).show();
+            }
+            else if(position==1)
+            {
+                Toast.makeText(CustomSpinner.this,"america",Toast.LENGTH_LONG).show();
+            }
+            else if(position==2)
+            {
+                Toast.makeText(CustomSpinner.this,"pakistan",Toast.LENGTH_LONG).show();
+            }
 
 
         }
