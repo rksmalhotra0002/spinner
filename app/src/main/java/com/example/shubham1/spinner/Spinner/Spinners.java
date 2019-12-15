@@ -14,7 +14,6 @@ import com.example.shubham1.spinner.CustomSpinner.CustomSpinner;
 import com.example.shubham1.spinner.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Spinners extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -29,17 +28,19 @@ public class Spinners extends AppCompatActivity implements AdapterView.OnItemSel
 
 
         Spinner spinner = findViewById(R.id.spinner);
-        List<String> categories = new ArrayList<>();
+
+        ArrayList<String> categories = new ArrayList<>();
         categories.add( "shubham");
         categories.add("karan");
         categories.add("arjun");
         categories.add("arsh");
         categories.add(0,"Select Category");
 
-           ArrayAdapter<String>adapter= new ArrayAdapter<>(this,android.R.layout.simple_spinner_item, categories);
-          adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+           ArrayAdapter<String>adapter= new ArrayAdapter<>(this,R.layout.color_spinner_layout, categories);
+          adapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
     }
 
     @Override

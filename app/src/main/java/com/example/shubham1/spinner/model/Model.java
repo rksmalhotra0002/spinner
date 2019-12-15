@@ -1,8 +1,9 @@
 package com.example.shubham1.spinner.model;
 
 public class Model {
-    String name;
-    int image;
+
+ private String name;
+  private int image;
 
     public Model(String name, int image) {
         this.name = name;
